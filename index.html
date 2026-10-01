@@ -3,153 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Kiran Academy</title>
-
     <link rel="stylesheet" href="css/style.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section{padding:150px 0 100px; background:#0d1b2a; color:white;}
+        .info-box{background:white; padding:25px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+        section{scroll-margin-top:80px;}
+    </style>
 </head>
-
 <body>
-
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-
     <div class="container">
-
-        <a class="navbar-brand fw-bold" href="index.html">
-            KIRAN ACADEMY
-        </a>
-
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-
+        <a class="navbar-brand fw-bold" href="#home">KIRAN ACADEMY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
-
         </button>
-
         <div class="collapse navbar-collapse" id="navbarNav">
-
             <ul class="navbar-nav ms-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="courses.html">Courses</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="internship.html">Internship</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="placement.html">Placement</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="#internship">Internship</a></li>
+                <li class="nav-item"><a class="nav-link" href="#placement">Placement</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
-
         </div>
-
     </div>
-
 </nav>
 
-
-<!-- Hero Section -->
-<section class="hero-section">
-
+<section class="hero-section" id="home">
     <div class="container text-center">
-
         <h1>Welcome to Kiran Academy</h1>
-
         <h3>Learn. Grow. Succeed.</h3>
-
-        <p>
-            Build your skills, improve your confidence
-            and prepare yourself for a successful career.
-        </p>
-
-        <a href="courses.html" class="btn btn-primary btn-lg">
-            Explore Courses
-        </a>
-
-        <a href="contact.html" class="btn btn-outline-light btn-lg">
-            Contact Us
-        </a>
-
+        <p>Build your skills, improve your confidence and prepare yourself for a successful career.</p>
+        <a href="#courses" class="btn btn-primary btn-lg">Explore Courses</a>
+        <a href="#contact" class="btn btn-outline-light btn-lg">Contact Us</a>
     </div>
-
 </section>
 
-
-<!-- About Section -->
-<section class="py-5">
-
+<section class="py-5" id="about">
     <div class="container">
-
         <div class="row align-items-center">
-
             <div class="col-md-6">
-
                 <h2>About Kiran Academy</h2>
-
-                <p>
-                    Kiran Academy provides skill-based and
-                    career-oriented training to help students
-                    develop practical knowledge and professional skills.
-                </p>
-
-                <p>
-                    Our focus is on practical learning,
-                    communication, personality development
-                    and career preparation.
-                </p>
-
-                <a href="about.html" class="btn btn-dark">
-                    Know More
-                </a>
-
+                <p>Kiran Academy provides skill-based and career-oriented training to help students develop practical knowledge and professional skills.</p>
+                <p>Our focus is on practical learning, communication, personality development and career preparation.</p>
+                <a href="#about" class="btn btn-dark">Know More</a>
             </div>
-
-
             <div class="col-md-6">
-
                 <div class="info-box">
-
                     <h3>Career-Focused Learning</h3>
-
-                    <p>
-                        Learn practical skills and prepare
-                        yourself for real-world opportunities.
-                    </p>
-
+                    <p>Learn practical skills and prepare yourself for real-world opportunities.</p>
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
-
-<!-- Why Choose Us -->
 <section class="py-5 bg-light">
-
     <div class="container">
+        <h2 class="text-center mb-4">Why Choose Us</h2>
+        <div class="row text-center">
+            <div class="col-md-4"><h5>✔ Expert Trainers</h5><p>Practical training by experienced mentors</p></div>
+            <div class="col-md-4"><h5>✔ Career Guidance</h5><p>Resume, interview & personality development</p></div>
+            <div class="col-md-4"><h5>✔ Affordable Fees</h5><p>Quality education at low cost</p></div>
+        </div>
+    </div>
+</section>
 
-        <h2 class="text-center
+<section class="py-5" id="courses">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Courses</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3"><div class="card"><div class="card-body"><h5>Computer Basics</h5><p>MS Office, Internet, Typing</p></div></div></div>
+            <div class="col-md-4 mb-3"><div class="card"><div class="card-body"><h5>Programming</h5><p>HTML, CSS, Python, Java</p></div></div></div>
+            <div class="col-md-4 mb-3"><div class="card"><div class="card-body"><h5>Personality Development</h5><p>Communication & Interview Skills</p></div></div></div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light" id="internship">
+    <div class="container text-center">
+        <h2>Internship Program</h2>
+        <p>Gain real-world experience with our internship programs and get certified.</p>
+        <a href="#contact" class="btn btn-primary">Apply Now</a>
+    </div>
+</section>
+
+<section class="py-5" id="placement">
+    <div class="container text-center">
+        <h2>Placement Assistance</h2>
+        <p>We help our students with job preparation, mock interviews and placement support.</p>
+    </div>
+</section>
+
+<section class="py-5 bg-dark text-white" id="contact">
+    <div class="container text-center">
+        <h2>Contact Us</h2>
+        <p>Email: kiranacademy@example.com | Phone: +91 12345 67890</p>
+        <p>Nagpur, Maharashtra</p>
+        <a href="mailto:kiranacademy@example.com" class="btn btn-light">Send Email</a>
+    </div>
+</section>
+
+<footer class="py-3 bg-black text-white text-center">
+    <p class="mb-0">© 2026 Kiran Academy. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
